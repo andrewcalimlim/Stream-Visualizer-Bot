@@ -8,25 +8,25 @@ client.on('ready', () => {
 
 client.on('message', msg => {
     var matches = msg.content.match(/(!|\w)+/g); 
-    //matching a word
+    // matching a word
     
     //console.log(first_match[0]);
     
-    if (matches[0] == "!svb"){
-    //svb called
+    if (matches != null && matches[0] == "!svb"){
+    // if there even is a match and if !svb is called 
         if (matches.length == 2){
-        //one word is matched next to it
+        // if one word is matched next to it
         
             
             if (/\b[LDUR]+\b/.test(matches[1])){
-                // word matched as valid input
+                // if word matched as valid input
                 // valid input = non-blank word in LDUR alphabet 
 
                 var arrow_input = matches[1];
                 
                 /* MAIN FUNCTIONALITY */
 
-                var limit = 32;
+                var limit = 16;
 
                 if(arrow_input.length <= limit){
                     output = "";
@@ -156,13 +156,27 @@ client.on('message', msg => {
                 msg.channel.send(output);
             }
 
+            else if(matches[1] == "opinion"){
+                var possible_ops = ["strongly disagree", "disagree", "am neutral towards it", "agree", "strongly agree"];
 
+                var min = 0;
+                var max = possible_ops.length;
+
+                var rand_index = Math.floor(Math.random() * (max - min)) + min;
+                
+                var output = "I " + possible_ops[rand_index] + ".";
+                
+                msg.channel.send(output);
+
+            }
 
             // TO DO
 
             // [] get script running on a server
 
             // [] potentially add DDR version
+
+            // support multiple notes? []
 
             else{
                 // input is not valid
