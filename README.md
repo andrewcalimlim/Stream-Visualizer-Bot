@@ -1,4 +1,4 @@
-This is a Discord bot for the dance game community that visualizes arrow inputs (Left = L, Down = D, Up = U, Right = R)
+This is a Discord bot for the ITG community that visualizes arrow inputs (Left = L, Down = D, Up = U, Right = R) (Jumps too!)
 
 It uses images of green, blue, and red arrows uploaded to Discord as emotes to create a pattern of arrows
 akin to what you would see in ITG.
