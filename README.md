@@ -3,6 +3,10 @@ This is a Discord bot for the ITG community that visualizes arrow inputs (Left =
 It uses images of green, blue, and red arrows uploaded to Discord as emotes to create a pattern of arrows
 akin to what you would see in ITG.
 
+Here is an example of it's usage:
+
+![Example](https://i.imgur.com/yhC03H4.png)
+
 In Version 1.1, I added multi-note row support (like jumps or brackets).
 
 To replicate this bot you will need Node.js installed and your own authorization Discord bot token.
