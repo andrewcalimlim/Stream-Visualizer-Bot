@@ -5,9 +5,11 @@ akin to what you would see in ITG.
 
 Here is an example of it's usage:
 
-![Example](https://i.imgur.com/yhC03H4.png)
+![Example use](https://i.imgur.com/yhC03H4.png)
 
 In Version 1.1, I added multi-note row support (like jumps or brackets).
+
+![Example 1.1 use](https://i.imgur.com/1BX9hP2.png)
 
 To replicate this bot you will need Node.js installed and your own authorization Discord bot token.
 
