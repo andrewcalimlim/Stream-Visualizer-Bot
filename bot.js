@@ -16,7 +16,7 @@ client.on('message', msg => {
         if (matches.length == 2){
         // if one word is matched next to it
             
-            var input_string = matches[1];
+            var input_string = matches[1].toUpperCase();
 
             var matches_in = input_string.match(/[\[\]LDUR]+/g);
 
@@ -40,7 +40,7 @@ client.on('message', msg => {
                     arrow_input = input_string;
                 }
                 else{
-                    arrow_input = matches[1];
+                    arrow_input = matches[1].toUpperCase();
                 }
 
                 if(/\[/.test(arrow_input) || /\]/.test(arrow_input)){
