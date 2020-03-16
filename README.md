@@ -1,4 +1,4 @@
-This is a Discord bot for the In The Groove community that visualizes arrow inputs (Left = L, Down = D, Up = U, Right = R) (Jumps too!)
+This is a Discord bot for the ITG (In The Groove) community Discords that visualizes arrow inputs (Left = L, Down = D, Up = U, Right = R) (Jumps too!)
 
 It uses images of green, blue, and red arrows uploaded to Discord as emotes to create a pattern of arrows
 akin to what you would see in ITG.
